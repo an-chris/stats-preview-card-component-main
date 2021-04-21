@@ -3,9 +3,32 @@ body {
 }
 
 .card {
+  background-color: hsl(244, 38%, 16%);
 
 }
 
+.card__title {
+  color: hsl(0, 0%, 100%);
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+.card__summary {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card__stats {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.75);
+ }
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+ }
