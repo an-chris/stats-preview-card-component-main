@@ -1,139 +1,143 @@
   /* Mobile design */
-
-* {
+  * {
     box-sizing: border-box;
-}
+  }
 
-body {
-  background-color: hsl(233, 47%, 7%);
-}
+  body {
+    background-color: hsl(233, 47%, 7%);
+  }
 
-.container {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  .container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-.card {
-  background-color: hsl(244, 38%, 16%);
-  width: 280px;
-  height: 650px;
-  overflow: hidden;
-  border-radius: 10px;
-}
+  .card {
+    background-color: hsl(244, 38%, 16%);
+    width: 280px;
+    height: 650px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
 
-.card__header {
-  background: hsl(277, 90%, 30%);
-  overflow: hidden;
-  height: 200px;
-}
-
-.card__header--image {
-  width: 100%;
-  opacity: .4;
-  object-fit: cover;
-}
-
-.text {
-  padding: 1.8rem;
-}
-
-.card__title {
-  color: hsl(0, 0%, 100%);
-  font-size: 1.3rem;
-}
-
-.card__title--violet {
-  color: hsl(277, 64%, 61%);
-}
-
-.card__summary {
-  color: hsla(0, 0%, 100%, 0.75);
-  font-size: .75rem;
-  line-height: 1.8;
-}
-
-.card__stats {
-  color: hsla(0, 0%, 100%, 0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  vertical-align: middle;
-  margin: 1rem;
-}
-
-.card__stat {
-  font-size: .2rem;
-  margin: .75rem 0;
-}
-
-.card__stat--white {
-  color: hsl(0, 0%, 100%);
-  display: block;
-  margin-bottom: .4rem;
-  font-size: 1.1rem;
-}
-
-.attribution {
-  margin-top: .5rem;
-  font-size: 11px;
-  text-align: center;
-  color: hsla(0, 0%, 100%, 0.75);
- }
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
- }
-
-   /* Tablet and Desktop design */
-
- @media (min-width: 768px) {
-
-   .card {
-     display: flex;
-     flex-direction: row-reverse;
-     justify-content: center;
-     align-items: center;
-     height: 22rem;
-     width: 47.5rem;
-   }
-
-   .card__header {
-      height: 22rem;
-      width: calc(47.5rem / 2);
-   }
+  .card__header {
+    background: hsl(277, 90%, 30%);
+    overflow: hidden;
+    height: 200px;
+  }
 
   .card__header--image {
-    background-image: url(./images/image-header-desktop.jpg);
     width: 100%;
-    height: 100%;
+    opacity: .4;
+    object-fit: cover;
   }
 
   .text {
-    height: 22rem;
-    width: calc(47.5rem / 2);
-    text-align: left;
+    padding: 1.8rem;
   }
 
   .card__title {
-     font-size: 1.6rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+  }
 
+  .card__title--violet {
+    color: hsl(277, 64%, 61%);
+  }
+
+  .card__summary {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: .75rem;
+    line-height: 1.8;
   }
 
   .card__stats {
-    flex-direction: row;
-    padding: 0;
-    margin: 0 3rem 0 0;
-
+    color: hsla(0, 0%, 100%, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 1rem;
   }
 
   .card__stat {
-    text-align: left;
-    margin: 2.5rem 1.5rem;
-
+    font-size: .2rem;
+    margin: .75rem 0;
   }
 
- }
+  .card__stat--white {
+    color: hsl(0, 0%, 100%);
+    display: block;
+    margin-bottom: .4rem;
+    font-size: 1.1rem;
+  }
+
+  .attribution {
+    margin-top: .5rem;
+    font-size: 11px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+
+
+  /* Tablet and Desktop design */
+  @media (min-width: 768px) {
+    .card {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      height: 22rem;
+      width: 47.5rem;
+    }
+
+    .card__header {
+      height: 22rem;
+      width: calc(47.5rem / 2);
+    }
+
+    .card__header--image {
+      background-image: url(./images/image-header-desktop.jpg);
+      width: 100%;
+      height: 100%;
+    }
+
+    .text {
+      height: 22rem;
+      width: calc(47.5rem / 2);
+      text-align: left;
+    }
+
+    .card__title {
+      font-size: 1.6rem;
+    }
+
+    .card__stats {
+      flex-direction: row;
+      padding: 0;
+      margin: 0 3rem 0 0;
+    }
+
+    .card__stat {
+      text-align: left;
+      margin: 2.5rem 1.5rem;
+    }
+  }
+
+  /* Design for larger monitors */
+
+  @media (min-width: 1500px) {
+    body {
+      zoom: 1.4;
+    }
+  }
