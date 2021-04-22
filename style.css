@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+  /* Mobile design */
 
 * {
     box-sizing: border-box;
@@ -26,12 +26,12 @@ body {
 }
 
 .card__header {
-  background: hsl(267, 55%, 61%);
+  background: hsl(277, 90%, 30%);
   overflow: hidden;
   height: 200px;
 }
 
-img {
+.card__header--image {
   width: 100%;
   opacity: .4;
   object-fit: cover;
@@ -53,27 +53,32 @@ img {
 .card__summary {
   color: hsla(0, 0%, 100%, 0.75);
   font-size: .75rem;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .card__stats {
   color: hsla(0, 0%, 100%, 0.6);
   display: flex;
-  height: 50%;
   flex-direction: column;
   justify-content: center;
-  margin: 1.3rem;
-  font-size: .5rem;
+  vertical-align: middle;
+  margin: 1rem;
 }
 
-.card__stats--white {
+.card__stat {
+  font-size: .2rem;
+  margin: .75rem 0;
+}
+
+.card__stat--white {
   color: hsl(0, 0%, 100%);
   display: block;
   margin-bottom: .4rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .attribution {
+  margin-top: .5rem;
   font-size: 11px;
   text-align: center;
   color: hsla(0, 0%, 100%, 0.75);
@@ -81,4 +86,54 @@ img {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+ }
+
+   /* Tablet and Desktop design */
+
+ @media (min-width: 768px) {
+
+   .card {
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: center;
+     align-items: center;
+     height: 22rem;
+     width: 47.5rem;
+   }
+
+   .card__header {
+      height: 22rem;
+      width: calc(47.5rem / 2);
+   }
+
+  .card__header--image {
+    background-image: url(./images/image-header-desktop.jpg);
+    width: 100%;
+    height: 100%;
+  }
+
+  .text {
+    height: 22rem;
+    width: calc(47.5rem / 2);
+    text-align: left;
+  }
+
+  .card__title {
+     font-size: 1.6rem;
+
+  }
+
+  .card__stats {
+    flex-direction: row;
+    padding: 0;
+    margin: 0 3rem 0 0;
+
+  }
+
+  .card__stat {
+    text-align: left;
+    margin: 2.5rem 1.5rem;
+
+  }
+
  }
